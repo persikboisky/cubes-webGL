@@ -4,12 +4,9 @@ export default class Event {
         this.mouse = {
             x: 0,
             y: 0,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false
         };
         this.getStateKey = (keyCode) => this.stateKey[keyCode];
+        this.getStateKeyMouse = (keyCode) => this.mouse[keyCode];
         element.addEventListener("keydown", (e) => {
             this.stateKey[e.code] = true;
         });
@@ -17,10 +14,10 @@ export default class Event {
             this.stateKey[e.code] = false;
         });
         element.addEventListener("mousedown", (e) => {
-            console.log(e.button);
+            this.mouse[e.button] = true;
         });
         element.addEventListener("mouseup", (e) => {
-            console.log(e.code);
+            this.mouse[e.button] = false;
         });
     }
 }
