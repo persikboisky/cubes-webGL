@@ -3,13 +3,13 @@
     "baseUrl": ".",
     "outDir": "./content/js",
     "rootDir": "./content/ts",
-    "target": "es2015",
-    "module": "es2015",
+    "target": "es2022",
+    "module": "es2022",
     "moduleResolution": "node",
     "lib": [
-      "ES2015",
+      "ES202",
       "dom",
-      "es2015"
+      "es2022"
     ]
   }
 }
