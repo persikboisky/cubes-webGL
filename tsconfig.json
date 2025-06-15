@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./content/js",
+    "rootDir": "./content/ts",
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": [
+      "ES2015",
+      "dom",
+      "es2015"
+    ]
+  }
+}
