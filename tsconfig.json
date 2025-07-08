@@ -7,8 +7,9 @@
     "module": "es2022",
     "moduleResolution": "node",
     "lib": [
-      "ES2020",
+      "ES202",
       "dom",
+      "es2022"
     ]
   }
 }
